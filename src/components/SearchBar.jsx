@@ -2,9 +2,8 @@ import React, {useState} from 'react'
 import {FaSearch} from 'react-icons/fa'
 import './SearchBar.css'
 
-const SearchBar = (props) => {
+const SearchBar = ({setResults}) => {
 
-    const {setResults} = props;
     const[input, setInput] = useState("");
 
     const fetchData = (value) => {
